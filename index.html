@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Pulse | AI • Dev Tools • Industry</title>
+    <style>
+        :root {
+            --bg: #fafafa;
+            --card: #ffffff;
+            --text: #1a1a1a;
+            --muted: #666;
+            --accent: #2563eb;
+            --border: #e5e5e5;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        
+        header {
+            background: var(--card);
+            border-bottom: 1px solid var(--border);
+            padding: 1.5rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text);
+            text-decoration: none;
+        }
+        
+        .logo span {
+            color: var(--accent);
+        }
+        
+        .date {
+            color: var(--muted);
+            font-size: 0.875rem;
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .section {
+            margin-bottom: 3rem;
+        }
+        
+        .section-title {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--accent);
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        
+        .stories {
+            display: grid;
+            gap: 1rem;
+        }
+        
+        .story {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.25rem;
+            text-decoration: none;
+            color: inherit;
+            transition: box-shadow 0.2s, transform 0.2s;
+        }
+        
+        .story:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transform: translateY(-2px);
+        }
+        
+        .story-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--text);
+        }
+        
+        .story-meta {
+            display: flex;
+            gap: 1rem;
+            font-size: 0.8rem;
+            color: var(--muted);
+        }
+        
+        .story-source {
+            font-weight: 500;
+        }
+        
+        .story-excerpt {
+            margin-top: 0.75rem;
+            font-size: 0.9rem;
+            color: var(--muted);
+        }
+        
+        .featured {
+            grid-column: 1 / -1;
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+        }
+        
+        .featured .story-title {
+            color: white;
+            font-size: 1.4rem;
+        }
+        
+        .featured .story-meta,
+        .featured .story-excerpt {
+            color: rgba(255,255,255,0.85);
+        }
+        
+        @media (min-width: 768px) {
+            .stories {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .stories {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--muted);
+            font-size: 0.875rem;
+            border-top: 1px solid var(--border);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="#" class="logo">Tech<span>Pulse</span></a>
+            <span class="date">February 11, 2026</span>
+        </div>
+    </header>
+    
+    <main>
+        <section class="section">
+            <h2 class="section-title">Artificial Intelligence</h2>
+            <div class="stories">
+                <a href="https://www.bloomberg.com/news/articles/2026-02-06/how-much-is-big-tech-spending-on-ai-computing-a-staggering-650-billion-in-2026" class="story featured" target="_blank">
+                    <h3 class="story-title">Big Tech AI Spending Hits $650 Billion in 2026</h3>
+                    <div class="story-meta">
+                        <span class="story-source">Bloomberg</span>
+                        <span>5 days ago</span>
+                    </div>
+                    <p class="story-excerpt">Alphabet, Amazon, Meta, and Microsoft forecast capital expenditures reaching $650 billion — a tide of cash for data centers unprecedented this century.</p>
+                </a>
+                
+                <a href="https://techcrunch.com/2026/01/02/in-2026-ai-will-move-from-hype-to-pragmatism/" class="story" target="_blank">
+                    <h3 class="story-title">2026: AI Shifts from Hype to Pragmatism</h3>
+                    <div class="story-meta">
+                        <span class="story-source">TechCrunch</span>
+                        <span>Jan 2</span>
+                    </div>
+                    <p class="story-excerpt">Focus shifts from building ever-larger models to making AI usable — smaller models, embedded intelligence, and human workflow integration.</p>
+                </a>
+                
+                <a href="https://www.humai.blog/ai-news-trends-february-2026-complete-monthly-digest/" class="story" target="_blank">
+                    <h3 class="story-title">Perplexity Launches Model Council</h3>
+                    <div class="story-meta">
+                        <span class="story-source">Humai</span>
+                        <span>15 hours ago</span>
+                    </div>
+                    <p class="story-excerpt">Revolutionary system runs Claude, GPT-5.2, and Gemini in parallel for cross-validated answers, reducing hallucination errors.</p>
+                </a>
+                
+                <a href="https://www.technologyreview.com/2026/01/05/1130662/whats-next-for-ai-in-2026/" class="story" target="_blank">
+                    <h3 class="story-title">World Models: The Next AI Frontier</h3>
+                    <div class="story-meta">
+                        <span class="story-source">MIT Tech Review</span>
+                        <span>Jan 5</span>
+                    </div>
+                    <p class="story-excerpt">LeCun's new lab seeks $5B valuation. DeepMind's Genie, World Labs' Marble, and newcomers push 3D spatial reasoning forward.</p>
+                </a>
+                
+                <a href="https://techcrunch.com/2026/01/02/in-2026-ai-will-move-from-hype-to-pragmatism/" class="story" target="_blank">
+                    <h3 class="story-title">MCP Becomes the "USB-C for AI"</h3>
+                    <div class="story-meta">
+                        <span class="story-source">TechCrunch</span>
+                        <span>Jan 2</span>
+                    </div>
+                    <p class="story-excerpt">Anthropic's Model Context Protocol donated to Linux Foundation. OpenAI, Microsoft, and Google embrace the standard for connecting AI agents.</p>
+                </a>
+                
+                <a href="https://www.crescendo.ai/news/latest-ai-news-and-updates" class="story" target="_blank">
+                    <h3 class="story-title">AI Deepfakes Used in Political Misinformation</h3>
+                    <div class="story-meta">
+                        <span class="story-source">Crescendo AI</span>
+                        <span>Feb 3</span>
+                    </div>
+                    <p class="story-excerpt">AP News investigation debunks viral AI-generated images linked to Epstein documents — a warning about synthetic "visual evidence."</p>
+                </a>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2 class="section-title">Developer Tools</h2>
+            <div class="stories">
+                <a href="https://cybersecuritynews.com/microsoft-patch-tuesday-february-2026/" class="story featured" target="_blank">
+                    <h3 class="story-title">Microsoft Patches 54 Vulnerabilities Including 6 Zero-Days</h3>
+                    <div class="story-meta">
+                        <span class="story-source">Cybersecurity News</span>
+                        <span>39 minutes ago</span>
+                    </div>
+                    <p class="story-excerpt">February Patch Tuesday fixes critical RCE flaws in GitHub Copilot, VS Code, Azure SDK, and Microsoft Defender for Endpoint.</p>
+                </a>
+                
+                <a href="https://developer.wordpress.org/news/2026/02/whats-new-for-developers-february-2026/" class="story" target="_blank">
+                    <h3 class="story-title">WordPress Studio 1.7 Gets AI-Friendly CLI</h3>
+                    <div class="story-meta">
+                        <span class="story-source">WordPress</span>
+                        <span>15 hours ago</span>
+                    </div>
+                    <p class="story-excerpt">New command line tools work seamlessly with Claude Code and Cursor. AI Experiments plugin adds excerpt generation and abilities explorer.</p>
+                </a>
+                
+                <a href="https://blog.jetbrains.com/dotnet/2026/02/10/dotinsights-february-2026/" class="story" target="_blank">
+                    <h3 class="story-title">Rider 2026.1 EAP Opens with C# 14 Support</h3>
+                    <div class="story-meta">
+                        <span class="story-source">JetBrains</span>
+                        <span>18 hours ago</span>
+                    </div>
+                    <p class="story-excerpt">New extension members, partial events, and constructors. Plus: Agent Skills move from Claude to open standard for daily coding workflows.</p>
+                </a>
+                
+                <a href="https://www.technologyreview.com/2025/12/15/1128352/rise-of-ai-coding-developers-2026/" class="story" target="_blank">
+                    <h3 class="story-title">AI Coding: Productivity Gains May Be Illusory</h3>
+                    <div class="story-meta">
+                        <span class="story-source">MIT Tech Review</span>
+                        <span>Jan 5</span>
+                    </div>
+                    <p class="story-excerpt">METR study shows developers were actually 19% slower with AI — despite believing they were 20% faster. Code quality metrics decline.</p>
+                </a>
+                
+                <a href="https://www.archyde.com/hello-developer-february-2026-apple-developer-news/" class="story" target="_blank">
+                    <h3 class="story-title">Xcode Gets Agentic Coding Features</h3>
+                    <div class="story-meta">
+                        <span class="story-source">Apple Developer</span>
+                        <span>Feb 5</span>
+                    </div>
+                    <p class="story-excerpt">Apple's IDE evolves toward autonomous development — understanding intent, suggesting code blocks, and anticipating errors.</p>
+                </a>
+                
+                <a href="https://devops.com/3-notable-software-development-trends-for-2026-and-beyond/" class="story" target="_blank">
+                    <h3 class="story-title">84% of Developers Now Use AI Tools</h3>
+                    <div class="story-meta">
+                        <span class="story-source">DevOps.com</span>
+                        <span>Dec 2025</span>
+                    </div>
+                    <p class="story-excerpt">Stack Overflow survey: AI generates docs, code, and tests. Low-code development accelerates as companies reduce dev costs.</p>
+                </a>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2 class="section-title">Tech Industry</h2>
+            <div class="stories">
+                <a href="https://finance.yahoo.com/topic/tech/" class="story featured" target="_blank">
+                    <h3 class="story-title">Anthropic Releases New Opus Model</h3>
+                    <div class="story-meta">
+                        <span class="story-source">Yahoo Finance</span>
+                        <span>Today</span>
+                    </div>
+                    <p class="story-excerpt">New version of Claude's flagship model further encroaches on software makers' turf as AI race intensifies.</p>
+                </a>
+                
+                <a href="https://www.cnbc.com/2026/02/09/this-ai-play-just-hit-another-record-high-what-were-making-of-the-stocks-gains.html" class="story" target="_blank">
+                    <h3 class="story-title">Microsoft Downgraded: "Lost the AI Narrative"</h3>
+                    <div class="story-meta">
+                        <span class="story-source">CNBC</span>
+                        <span>2 days ago</span>
+                    </div>
+                    <p class="story-excerpt">Melius Research says Copilot hasn't paid off as hoped. CEO Satya Nadella faces questions about AI strategy.</p>
+                </a>
+                
+                <a href="https://blog.mean.ceo/ai-news-february-2026/" class="story" target="_blank">
+                    <h3 class="story-title">Apple Partners with Google on Siri Foundation Models</h3>
+                    <div class="story-meta">
+                        <span class="story-source">Mean CEO</span>
+                        <span>Feb 2026</span>
+                    </div>
+                    <p class="story-excerpt">Surprising collaboration bases next-gen Apple Foundation Models on Google's Gemini system for better natural language understanding.</p>
+                </a>
+                
+                <a href="https://www.ibm.com/think/news/ai-tech-trends-predictions-2026" class="story" target="_blank">
+                    <h3 class="story-title">IBM: Quantum to Outperform Classical Computing in 2026</h3>
+                    <div class="story-meta">
+                        <span class="story-source">IBM Think</span>
+                        <span>Jan 1</span>
+                    </div>
+                    <p class="story-excerpt">Milestone expected to unlock breakthroughs in drug development, materials science, and financial optimization.</p>
+                </a>
+                
+                <a href="https://www.theinformation.com/technology" class="story" target="_blank">
+                    <h3 class="story-title">OpenAI Hiring Hundreds for Enterprise AI Team</h3>
+                    <div class="story-meta">
+                        <span class="story-source">The Information</span>
+                        <span>5 days ago</span>
+                    </div>
+                    <p class="story-excerpt">Technical consulting expansion to help corporations build custom AI applications and automate tasks — beating back Anthropic competition.</p>
+                </a>
+                
+                <a href="https://www.cnbc.com/2026/02/09/this-ai-play-just-hit-another-record-high-what-were-making-of-the-stocks-gains.html" class="story" target="_blank">
+                    <h3 class="story-title">Corning Becomes "AI Superstar" — Stock Up 50% YTD</h3>
+                    <div class="story-meta">
+                        <span class="story-source">CNBC</span>
+                        <span>2 days ago</span>
+                    </div>
+                    <p class="story-excerpt">WSJ feature drives specialty glassmaker to record highs as data center buildout fuels demand.</p>
+                </a>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Curated tech news • Updated February 11, 2026</p>
+    </footer>
+</body>
+</html>
