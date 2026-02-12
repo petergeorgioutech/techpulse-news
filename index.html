@@ -158,101 +158,13 @@
             font-size: 0.875rem;
             border-top: 1px solid var(--border);
         }
-        
-        .header-right {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-        
-        .refresh-btn {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.5rem 1rem;
-            background: var(--accent);
-            color: white;
-            border: none;
-            border-radius: 6px;
-            font-size: 0.875rem;
-            font-weight: 500;
-            cursor: pointer;
-            transition: background 0.2s, transform 0.1s;
-        }
-        
-        .refresh-btn:hover {
-            background: #1d4ed8;
-        }
-        
-        .refresh-btn:active {
-            transform: scale(0.98);
-        }
-        
-        .refresh-btn svg {
-            width: 16px;
-            height: 16px;
-        }
-        
-        .loading-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(250, 250, 250, 0.95);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            z-index: 1000;
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 0.3s, visibility 0.3s;
-        }
-        
-        .loading-overlay.active {
-            opacity: 1;
-            visibility: visible;
-        }
-        
-        .spinner {
-            width: 48px;
-            height: 48px;
-            border: 4px solid var(--border);
-            border-top-color: var(--accent);
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-        }
-        
-        @keyframes spin {
-            to { transform: rotate(360deg); }
-        }
-        
-        .loading-text {
-            margin-top: 1rem;
-            color: var(--muted);
-            font-size: 0.9rem;
-        }
     </style>
 </head>
 <body>
-    <div class="loading-overlay" id="loadingOverlay">
-        <div class="spinner"></div>
-        <p class="loading-text">Fetching latest news...</p>
-    </div>
-
     <header>
         <div class="header-content">
             <a href="#" class="logo">Tech<span>Pulse</span></a>
-            <div class="header-right">
-                <span class="date">February 11, 2026</span>
-                <button class="refresh-btn" onclick="refreshNews()">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-                    </svg>
-                    Refresh
-                </button>
-            </div>
+            <span class="date">February 12, 2026</span>
         </div>
     </header>
     
@@ -260,53 +172,53 @@
         <section class="section">
             <h2 class="section-title">Artificial Intelligence</h2>
             <div class="stories">
-                <a href="https://grist.org/energy/data-centers-natural-gas-methane-behind-the-meter/" class="story featured" target="_blank">
-                    <h3 class="story-title">Data centers are scrambling to power the AI boom with natural gas</h3>
-                    <div class="story-meta">
-                        <span class="story-source">Grist</span>
-                        <span>Yesterday</span>
-                    </div>
-                    <p class="story-excerpt">As tech giants find creative ways to generate electricity, they’re building a glut of new fossil fuel projects.</p>
-                </a>
-                <a href="https://timesofindia.indiatimes.com/education/news/hssc-cet-phase-2-recruitment-2026-registration-begins-for-4227-group-c-posts-direct-link-to-apply-here/articleshow/128152073.cms" class="story" target="_blank">
-                    <h3 class="story-title">HSSC CET Phase 2 recruitment 2026: Registration begins for 4,227 Group C posts; direct link to apply here</h3>
+                <a href="https://economictimes.indiatimes.com/opinion/et-commentary/the-great-integration-technology-talent-and-transformation-in-asia/articleshow/128193107.cms" class="story featured" target="_blank">
+                    <h3 class="story-title">The Great Integration: Technology, talent and transformation in Asia</h3>
                     <div class="story-meta">
                         <span class="story-source">The Times of India</span>
                         <span>Yesterday</span>
                     </div>
-                    <p class="story-excerpt">Haryana Staff Selection Commission is recruiting for 4,227 Group C posts through CET Phase 2. Only candidates who passed Phase 1 can apply. Applica...</p>
+                    <p class="story-excerpt">Economic liberalisation, shifting global power, corporate ambition and technology cycles from the 1980s to the 2020s underline lessons on calculate...</p>
                 </a>
-                <a href="https://indianexpress.com/article/technology/artificial-intelligence/anthropic-daniela-amodei-downplays-ai-impact-jobs-saaspocalypse-10524341/" class="story" target="_blank">
-                    <h3 class="story-title">‘Vanishingly small’: Anthropic’s Daniela Amodei downplays AI impact on jobs amid ‘SaaSpocalypse’ fears</h3>
+                <a href="https://www.cnbc.com/2026/02/11/japan-stocks-record-ai-yen-takaichi-.html" class="story" target="_blank">
+                    <h3 class="story-title">Japanese stocks have been hitting record highs. But the rally may be &#x27;fragile&#x27;</h3>
                     <div class="story-meta">
-                        <span class="story-source">The Indian Express</span>
+                        <span class="story-source">CNBC</span>
                         <span>Yesterday</span>
                     </div>
-                    <p class="story-excerpt">Amodei’s remarks come days after Anthropic’s new suite of workplace automation tools triggered a massive sell-off of Indian IT stocks.</p>
+                    <p class="story-excerpt">Japanese equities expected to scale fresh highs, but some warn that the rally may be treading on thin line.</p>
                 </a>
-                <a href="https://www.livemint.com/opinion/online-views/state-incentives-populations-asian-countries-fertility-rate-births-china-singapore-ageing-society-11770531679933.html" class="story" target="_blank">
-                    <h3 class="story-title">State incentives will do little to prevent the populations of Asian countries from shrinking</h3>
+                <a href="https://economictimes.indiatimes.com/news/new-updates/delhi-drivers-ai-is-coming-to-1000-traffic-signals-to-auto-generate-fines-heres-why-2026-could-mean-more-challans/articleshow/128193091.cms" class="story" target="_blank">
+                    <h3 class="story-title">Delhi drivers, AI is coming to 1000+ traffic signals to auto-generate fines. Here&#x27;s why 2026 could mean more challans</h3>
+                    <div class="story-meta">
+                        <span class="story-source">The Times of India</span>
+                        <span>Yesterday</span>
+                    </div>
+                    <p class="story-excerpt">Delhi is set to implement an AI-powered Integrated Traffic Management System (ITMS) featuring ANPR cameras and smart signals to combat pollution an...</p>
+                </a>
+                <a href="https://www.digitimes.com/news/a20260209PD209/arm-revenue-growth-smartphone-data.html" class="story" target="_blank">
+                    <h3 class="story-title">Analysis: Arm pivots to data centers as smartphones slump</h3>
+                    <div class="story-meta">
+                        <span class="story-source">Digitimes</span>
+                        <span>Yesterday</span>
+                    </div>
+                    <p class="story-excerpt">Arm reported record revenue in its fiscal third quarter of 2026. The UK-based semiconductor IP company is navigating ongoing smartphone market head...</p>
+                </a>
+                <a href="https://www.bbc.com/sport/cricket/articles/cdjnj7grkk4o?xtor=AL-72-%5Bpartner%5D-%5Byahoo.north.america%5D-%5Bheadline%5D-%5Bsport%5D-%5Bbizdev%5D-%5Bisapi%5D" class="story" target="_blank">
+                    <h3 class="story-title">The pizza chef hoping to star for Italy at T20 World Cup</h3>
+                    <div class="story-meta">
+                        <span class="story-source">BBC News</span>
+                        <span>Yesterday</span>
+                    </div>
+                    <p class="story-excerpt">Some of Italy&#x27;s players have never stepped foot in the country but they are determined to put the nation&#x27;s cricket team on the map, write...</p>
+                </a>
+                <a href="https://www.livemint.com/opinion/online-views/sanae-takaichi-japan-meiji-restoration-2-0-japan-reinvent-south-korea-china-xi-jinping-trump-11770717168036.html" class="story" target="_blank">
+                    <h3 class="story-title">Meiji Restoration 2.0? Japan looks set to reinvent itself under the bold leadership of Sanae Takaichi</h3>
                     <div class="story-meta">
                         <span class="story-source">Livemint</span>
                         <span>Yesterday</span>
                     </div>
-                    <p class="story-excerpt">The long shift towards smaller families across Asia did not happen overnight and it can’t be reversed quickly. Singapore’s struggle to lift its bir...</p>
-                </a>
-                <a href="https://www.techtarget.com/searchapparchitecture/tip/Memory-safe-languages-Pursuing-secure-sustainable-software" class="story" target="_blank">
-                    <h3 class="story-title">Memory-safe languages: Pursuing secure, sustainable software</h3>
-                    <div class="story-meta">
-                        <span class="story-source">Techtarget.com</span>
-                        <span>Yesterday</span>
-                    </div>
-                    <p class="story-excerpt">Learn how memory-safe languages prevent vulnerabilities by enforcing safe memory use at design time, helping IT leaders modernize platforms and red...</p>
-                </a>
-                <a href="https://www.thehindubusinessline.com/info-tech/ipo-bound-yaap-digital-raises-15-cr/article70614662.ece" class="story" target="_blank">
-                    <h3 class="story-title">IPO-bound YAAP Digital raises ₹15 cr</h3>
-                    <div class="story-meta">
-                        <span class="story-source">BusinessLine</span>
-                        <span>Yesterday</span>
-                    </div>
-                    <p class="story-excerpt">The investment comes amid a structural shift in the global marketing ecosystem, with brands moving away from creative-led campaigns towards data-va...</p>
+                    <p class="story-excerpt">Sanae Takaichi’s massive electoral victory amounts to a rare endorsement of a Japanese leader. She is ready to shake up Japan in more ways than one...</p>
                 </a>
             </div>
         </section>
@@ -314,53 +226,53 @@
         <section class="section">
             <h2 class="section-title">Developer Tools</h2>
             <div class="stories">
-                <a href="https://www.verdict.co.uk/databricks-5bn-equity-raise-134bn-valuation/" class="story featured" target="_blank">
-                    <h3 class="story-title">Databricks nears $5bn equity raise at $134bn valuation</h3>
+                <a href="https://www.business-standard.com/companies/news/unlisted-company-margins-at-a-record-high-gap-remains-with-listed-peers-126021100696_1.html" class="story featured" target="_blank">
+                    <h3 class="story-title">Unlisted company margins at a record high, gap remains with listed peers</h3>
                     <div class="story-meta">
-                        <span class="story-source">Verdict</span>
+                        <span class="story-source">Business Standard</span>
                         <span>Yesterday</span>
                     </div>
-                    <p class="story-excerpt">Databricks announced that it is completing more than $7bn of investment, including about $5bn of equity financing at a $134bn valuation.</p>
+                    <p class="story-excerpt">Profitability among unlisted entities fails to mask a persistent valuation divide, as public market incentives drive superior cost efficiencies for...</p>
                 </a>
-                <a href="https://www.usatoday.com/story/sports/ncaaf/2026/02/10/college-football-top-transfers-2026-josh-hoover-cam-coleman-dj-lagway-dylan-raiola/88474281007/" class="story" target="_blank">
-                    <h3 class="story-title">10 college football transfers I can&#x27;t stop thinking about for 2026 season</h3>
+                <a href="https://www.lifesciencesworld.com/what-is-code-blue-for-deer/" class="story" target="_blank">
+                    <h3 class="story-title">What is code blue for deer?</h3>
                     <div class="story-meta">
-                        <span class="story-source">USA Today</span>
+                        <span class="story-source">Lifesciencesworld.com</span>
                         <span>Yesterday</span>
                     </div>
-                    <p class="story-excerpt">Josh Hoover to IU, DJ Lagway to Baylor and Darian Mensah to Miami are just a few transfers that will shape 2026. And there&#x27;s a big one for 202...</p>
+                    <p class="story-excerpt">What is Code Blue for Deer? Understanding Emergency Response for Wildlife Code Blue for deer is not a standardized medical term, but rather a term ...</p>
                 </a>
-                <a href="https://www.geeky-gadgets.com/steam-deck-developer-support/" class="story" target="_blank">
-                    <h3 class="story-title">GDC Survey Ranks Steam Deck Third for Developer Focus, Tied with PS5 &amp; PS5 Pro</h3>
+                <a href="https://economictimes.indiatimes.com/opinion/et-commentary/the-great-integration-technology-talent-and-transformation-in-asia/articleshow/128193107.cms" class="story" target="_blank">
+                    <h3 class="story-title">The Great Integration: Technology, talent and transformation in Asia</h3>
                     <div class="story-meta">
-                        <span class="story-source">Geeky Gadgets</span>
+                        <span class="story-source">The Times of India</span>
                         <span>Yesterday</span>
                     </div>
-                    <p class="story-excerpt">What if you could carry the power of a high-performance gaming PC in your hands? The Steam Deck has turned that dream into reality, redefining what...</p>
+                    <p class="story-excerpt">Economic liberalisation, shifting global power, corporate ambition and technology cycles from the 1980s to the 2020s underline lessons on calculate...</p>
                 </a>
-                <a href="https://grist.org/energy/data-centers-natural-gas-methane-behind-the-meter/" class="story" target="_blank">
-                    <h3 class="story-title">Data centers are scrambling to power the AI boom with natural gas</h3>
+                <a href="https://github.com/brucetoo/visual-agentic-dev" class="story" target="_blank">
+                    <h3 class="story-title">Show HN: Visual Agentic Dev – Click React components to edit source capabilities</h3>
                     <div class="story-meta">
-                        <span class="story-source">Grist</span>
+                        <span class="story-source">Github.com</span>
                         <span>Yesterday</span>
                     </div>
-                    <p class="story-excerpt">As tech giants find creative ways to generate electricity, they’re building a glut of new fossil fuel projects.</p>
+                    <p class="story-excerpt">Hello HN,I built a tool to solve a specific annoyance: context switching between the browser (where I see the bug) and VS Code (where I fix it).It&...</p>
                 </a>
-                <a href="https://www.infosecurity-magazine.com/news/european-governments-zeroday/" class="story" target="_blank">
-                    <h3 class="story-title">European Governments Breached in Zero-Day Attacks Targeting Ivanti</h3>
+                <a href="https://www.globenewswire.com/news-release/2026/02/11/3235932/0/en/Industrial-3D-Printing-Market-Size-to-Worth-24-79-Billion-by-2035-SNS-Insider.html" class="story" target="_blank">
+                    <h3 class="story-title">Industrial 3D Printing Market Size to Worth $24.79 Billion by 2035 | SNS Insider</h3>
                     <div class="story-meta">
-                        <span class="story-source">Infosecurity Magazine</span>
+                        <span class="story-source">GlobeNewswire</span>
                         <span>Yesterday</span>
                     </div>
-                    <p class="story-excerpt">The European Commission and government agencies in Finland and the Netherlands have suffered potentially related breaches</p>
+                    <p class="story-excerpt">Global Industrial 3D Printing Market Size, Share &amp; Segmentation by Component, Process, Technology, Application, Industry And by Regions | Forec...</p>
                 </a>
-                <a href="https://eplindex.com/142636/tottenham-hotspur-injury-latest-pedro-porro-djed-spence-and-more.html" class="story" target="_blank">
-                    <h3 class="story-title">Tottenham Hotspur injury latest: Pedro Porro, Djed Spence and more</h3>
+                <a href="https://thehackernews.com/2026/02/north-korea-linked-unc1069-uses-ai.html" class="story" target="_blank">
+                    <h3 class="story-title">North Korea-Linked UNC1069 Uses AI Lures to Attack Cryptocurrency Organizations</h3>
                     <div class="story-meta">
-                        <span class="story-source">English Premier League Index - Opta Stats</span>
+                        <span class="story-source">Internet</span>
                         <span>Yesterday</span>
                     </div>
-                    <p class="story-excerpt">Spurs injury latest as availability concerns shape decisive periodTottenham’s season continues to feel like it is being negotiated rather than driv...</p>
+                    <p class="story-excerpt">The North Korea-linked threat actor known as UNC1069 has been observed targeting the cryptocurrency sector to steal sensitive data from Windows and...</p>
                 </a>
             </div>
         </section>
@@ -368,53 +280,53 @@
         <section class="section">
             <h2 class="section-title">Tech Industry</h2>
             <div class="stories">
-                <a href="https://www.verdict.co.uk/databricks-5bn-equity-raise-134bn-valuation/" class="story featured" target="_blank">
-                    <h3 class="story-title">Databricks nears $5bn equity raise at $134bn valuation</h3>
-                    <div class="story-meta">
-                        <span class="story-source">Verdict</span>
-                        <span>Yesterday</span>
-                    </div>
-                    <p class="story-excerpt">Databricks announced that it is completing more than $7bn of investment, including about $5bn of equity financing at a $134bn valuation.</p>
-                </a>
-                <a href="https://abcnews.go.com/US/video/seahawks-meet-mouse-disneyland-130017982" class="story" target="_blank">
-                    <h3 class="story-title">WATCH: Seahawks meet a mouse at Disneyland</h3>
-                    <div class="story-meta">
-                        <span class="story-source">ABC News</span>
-                        <span>Yesterday</span>
-                    </div>
-                    <p class="story-excerpt">Fresh off their Super Bowl win, a couple of players from the Seahawks take part in a 40-year-old tradition at Disneyland.</p>
-                </a>
-                <a href="https://www.livemint.com/companies/people/elon-musk-says-he-has-fallen-prey-to-fancy-resumes-shares-foolproof-plan-he-swears-by-during-hiring-11770713350942.html" class="story" target="_blank">
-                    <h3 class="story-title">Elon Musk says he has ‘fallen prey’ to fancy resumes, shares foolproof plan he swears by during hiring</h3>
-                    <div class="story-meta">
-                        <span class="story-source">Livemint</span>
-                        <span>Yesterday</span>
-                    </div>
-                    <p class="story-excerpt">Elon Musk, who runs companies like Tesla, CEO and SpaceX, is known for his micromanagement style of leadership, and this quality does not escape hi...</p>
-                </a>
-                <a href="https://grist.org/energy/data-centers-natural-gas-methane-behind-the-meter/" class="story" target="_blank">
-                    <h3 class="story-title">Data centers are scrambling to power the AI boom with natural gas</h3>
-                    <div class="story-meta">
-                        <span class="story-source">Grist</span>
-                        <span>Yesterday</span>
-                    </div>
-                    <p class="story-excerpt">As tech giants find creative ways to generate electricity, they’re building a glut of new fossil fuel projects.</p>
-                </a>
-                <a href="https://timesofindia.indiatimes.com/education/news/hssc-cet-phase-2-recruitment-2026-registration-begins-for-4227-group-c-posts-direct-link-to-apply-here/articleshow/128152073.cms" class="story" target="_blank">
-                    <h3 class="story-title">HSSC CET Phase 2 recruitment 2026: Registration begins for 4,227 Group C posts; direct link to apply here</h3>
+                <a href="https://economictimes.indiatimes.com/opinion/et-commentary/the-great-integration-technology-talent-and-transformation-in-asia/articleshow/128193107.cms" class="story featured" target="_blank">
+                    <h3 class="story-title">The Great Integration: Technology, talent and transformation in Asia</h3>
                     <div class="story-meta">
                         <span class="story-source">The Times of India</span>
                         <span>Yesterday</span>
                     </div>
-                    <p class="story-excerpt">Haryana Staff Selection Commission is recruiting for 4,227 Group C posts through CET Phase 2. Only candidates who passed Phase 1 can apply. Applica...</p>
+                    <p class="story-excerpt">Economic liberalisation, shifting global power, corporate ambition and technology cycles from the 1980s to the 2020s underline lessons on calculate...</p>
                 </a>
-                <a href="https://indianexpress.com/article/technology/artificial-intelligence/anthropic-daniela-amodei-downplays-ai-impact-jobs-saaspocalypse-10524341/" class="story" target="_blank">
-                    <h3 class="story-title">‘Vanishingly small’: Anthropic’s Daniela Amodei downplays AI impact on jobs amid ‘SaaSpocalypse’ fears</h3>
+                <a href="https://www.abc.net.au/news/2026-02-11/rba-deputy-governor-says-rba-not-criticise-government-policy/106331502" class="story" target="_blank">
+                    <h3 class="story-title">RBA deputy governor says changes to &#x27;three key facts&#x27; prompted rate rise</h3>
                     <div class="story-meta">
-                        <span class="story-source">The Indian Express</span>
+                        <span class="story-source">ABC News (AU)</span>
                         <span>Yesterday</span>
                     </div>
-                    <p class="story-excerpt">Amodei’s remarks come days after Anthropic’s new suite of workplace automation tools triggered a massive sell-off of Indian IT stocks.</p>
+                    <p class="story-excerpt">RBA deputy governor Andrew Hauser says central banks should not criticise normal government spending choices, but he wonders if Australia&#x27;s ec...</p>
+                </a>
+                <a href="https://www.lifesciencesworld.com/do-squirrels-eat-apples/" class="story" target="_blank">
+                    <h3 class="story-title">Do squirrels eat apples?</h3>
+                    <div class="story-meta">
+                        <span class="story-source">Lifesciencesworld.com</span>
+                        <span>Yesterday</span>
+                    </div>
+                    <p class="story-excerpt">Do Squirrels Eat Apples? A Deep Dive Yes, squirrels absolutely do eat apples! In fact, apples are a nutritious and readily available food source, e...</p>
+                </a>
+                <a href="https://www.business-standard.com/immigration/even-200-000-h-1b-visa-fee-won-t-deter-hiring-new-study-explains-why-126021100680_1.html" class="story" target="_blank">
+                    <h3 class="story-title">Even $200,000 H-1B visa fee won&#x27;t deter hiring: New study explains why</h3>
+                    <div class="story-meta">
+                        <span class="story-source">Business Standard</span>
+                        <span>Yesterday</span>
+                    </div>
+                    <p class="story-excerpt">Even a $150,000-$200,000 visa fee may not significantly reduce H-1B hiring, economist George Borjas finds</p>
+                </a>
+                <a href="https://www.thehindubusinessline.com/brandhub/pr-release/iqiyi-opens-first-tech-enabled-immersive-theme-park-bringing-chinese-ip-to-real-life/article70615158.ece" class="story" target="_blank">
+                    <h3 class="story-title">iQIYI Opens First Tech-Enabled Immersive Theme Park, Bringing Chinese IP to Real Life</h3>
+                    <div class="story-meta">
+                        <span class="story-source">BusinessLine</span>
+                        <span>Yesterday</span>
+                    </div>
+                    <p class="story-excerpt">iQIYI Opens First Tech-Enabled Immersive Theme Park, Bringing Chinese IP to Real Life</p>
+                </a>
+                <a href="https://pypi.org/project/iflow-mcp-metehan777-gsc-mcp-server/0.1.0/" class="story" target="_blank">
+                    <h3 class="story-title">iflow-mcp_metehan777-gsc-mcp-server 0.1.0</h3>
+                    <div class="story-meta">
+                        <span class="story-source">Pypi.org</span>
+                        <span>Yesterday</span>
+                    </div>
+                    <p class="story-excerpt">Google Search Console MCP server for Claude</p>
                 </a>
             </div>
         </section>
@@ -422,18 +334,7 @@
     </main>
     
     <footer>
-        <p>Curated tech news • Updated February 11, 2026</p>
+        <p>Curated tech news • Updated February 12, 2026</p>
     </footer>
-
-    <script>
-        function refreshNews() {
-            const overlay = document.getElementById('loadingOverlay');
-            overlay.classList.add('active');
-            
-            setTimeout(() => {
-                location.reload();
-            }, 5000);
-        }
-    </script>
 </body>
 </html>
